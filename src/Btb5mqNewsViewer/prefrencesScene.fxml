@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="200.0" stylesheets="@dark-theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Btb5mqNewsViewer.PrefrencesSceneController">
+   <children>
+      <VBox spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <RadioButton fx:id="showCheckBox" mnemonicParsing="false" onAction="#showCheckBoxAction" text="Show images" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sources" underline="true" />
+            <CheckBox fx:id="msnbcCheckBox" mnemonicParsing="false" onAction="#msnbcCheckBoxAction" text="MSNBC" />
+            <CheckBox fx:id="cbsNewsCheckBox" mnemonicParsing="false" onAction="#cbsNewsCheckBoxAction" text="CBS News" />
+            <CheckBox fx:id="cnbcCheckBox" mnemonicParsing="false" onAction="#cnbcCheckBoxAction" text="CNBC" />
+            <CheckBox fx:id="reutersCheckBox" mnemonicParsing="false" onAction="#reutersCheckBoxAction" text="Reuters" />
+            <CheckBox fx:id="foxnewsCheckBox" mnemonicParsing="false" onAction="#foxnewsCheckBoxAction" text="Fox News" />
+         </children>
+         <padding>
+            <Insets left="10.0" top="20.0" />
+         </padding></VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="vBox" prefHeight="720.0" prefWidth="1280.0" stylesheets="@dark-theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="News">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleUpdate" text="Update" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Prefrences">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handlePrefrences" text="Prefrences" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <GridPane fx:id="gridPane" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="694.0" prefWidth="1280.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="764.0" minWidth="5.0" prefWidth="422.0" />
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="929.0" minWidth="10.0" prefWidth="858.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ListView fx:id="newsListView" prefHeight="200.0" prefWidth="276.0" />
+            <WebView fx:id="webView" prefHeight="688.0" prefWidth="352.0" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</VBox>
